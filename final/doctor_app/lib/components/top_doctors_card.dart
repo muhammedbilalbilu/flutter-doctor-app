@@ -109,14 +109,18 @@ class TopDoctorsCard extends StatelessWidget {
                                 ? kGreenLightColor
                                 : kRedLightColor,
                           ),
-                          child: Text(
-                            doctor!.doctorIsOpen ? 'Open' : 'Close',
-                            style:
-                                Theme.of(context).textTheme.headline6!.copyWith(
-                                      color: doctor!.doctorIsOpen
-                                          ? kGreenColor
-                                          : kRedColor,
-                                    ),
+                          child: Center(
+                            child: Text(
+                              doctor!.doctorIsOpen ? 'Open' : 'Close',
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .headline6!
+                                  .copyWith(
+                                    color: doctor!.doctorIsOpen
+                                        ? kGreenColor
+                                        : kRedColor,
+                                  ),
+                            ),
                           ),
                         )
                       ],
